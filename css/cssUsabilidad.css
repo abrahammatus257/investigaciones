@@ -1,0 +1,116 @@
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+header, footer {
+  text-align: center;
+  padding: 10px;
+}
+
+.titulo {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.parrafo {
+  font-size: 25px;
+  text-align: justify;
+  padding: 0 10px;
+}
+
+ol {
+  list-style-type: none; 
+  padding-left: 0;      
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.PrinciosUsabilidad {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+}
+.caja-li{
+  display: inline-flex;
+  gap: 20px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+.caja {
+  display: flex;
+  gap: 20px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+img {
+  border-radius: 6px;
+  height: 250px;
+  max-width: 100%;
+}
+
+
+.video-container{
+  max-width: 40rem;     /* elige 40rem o 35rem, pero una sola */
+  width: 100%;
+  margin: 0 auto;       /* centra el contenedor */
+  /* elimina paddings laterales que mueven el video */
+}
+
+.video-container iframe{
+  width: 100%;
+  aspect-ratio: 16 / 9; /* proporción correcta para YouTube */
+  display: block;
+  border: 0;
+}
+
+.video-container{
+  max-width: 35rem;
+  margin-left: 20px;
+}
+
+
+
+.PrinciosUsabilidad li {
+  margin-bottom: 20px; /* Espacio entre principios */
+}
+
+
+
+@media (max-width: 768px) {
+  .contenedor,
+  .PrinciosUsabilidad ,
+  .caja {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .titulo {
+    font-size: 1.8rem;
+  }
+
+  .parrafo {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+}

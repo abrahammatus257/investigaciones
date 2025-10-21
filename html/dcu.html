@@ -8,7 +8,66 @@
     <meta name="author" content="Franklin Abraham Montoya Matus">
     <title>Usabilidad Web y DCU</title>
     <link rel="stylesheet" href="../css/cssUsabilidad.css">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+
+        h1 {
+            color: antiquewhite;
+            align-self: center;
+        }
+
+        header {
+            background-image: url(../imagenes/header.jpg);
+            height: 150px;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            padding: 5px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-links {
+            display: inline-block;
+            padding: 20px;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .nav-links a {
+            font-size: 700;
+            color: antiquewhite;
+            text-decoration: none;
+            box-sizing: border-box;
+
+        }
+
+        .nav-links li:hover {
+            transform: scale(1.1);
+        }
+
+        .nav-links li a:hover {
+            color: white;
+        }
+
+        #Titulo {
+            margin-left: 25px;
+        }
+    </style>
 </head>
 
 <body>
@@ -103,89 +162,176 @@
                 </li>
 
                 <li>
-                    <div class="caja-li"> </div>
-                    <h2 class="titulo">Relación entre el sistema y el mundo real</h2>
-                    <p class="parrafo">La interfaz debe hablar el mismo idioma que el usuario, utilizando palabras,
-                        símbolos y conceptos familiares. Evita términos técnicos o jerga complicada. Por ejemplo, usar
-                        un ícono de papelera para eliminar es más intuitivo que un botón con texto ambiguo. Esto genera
-                        confianza y facilita la interacción.</p>
+                    <div class="caja-li">
+                        <h2 class="titulo">Relación entre el sistema y el mundo real</h2>
+                        <p class="parrafo">La interfaz debe hablar el mismo idioma que el usuario, utilizando palabras,
+                            símbolos y conceptos familiares. Evita términos técnicos o jerga complicada. Por ejemplo,
+                            usar
+                            un ícono de papelera para eliminar es más intuitivo que un botón con texto ambiguo. Esto
+                            genera
+                            confianza y facilita la interacción.</p>
 
+                        <img src="../imagenes/principio2.png" alt="principio 2 Jackob">
+
+                    </div>
                 </li>
 
                 <li>
-                    <h2 class="titulo">Control y libertad del usuario</h2>
-                    <p class="parrafo">Los usuarios deben tener la posibilidad de deshacer acciones o salir de procesos
-                        sin complicaciones. Si cometen un error, deberían poder corregirlo fácilmente. Funciones como
-                        “Cancelar” o “Deshacer” son esenciales para que el usuario no se sienta atrapado en una acción
-                        irreversible.</p>
-
+                    <div class="caja-li">
+                        <h2 class="titulo">Control y libertad del usuario</h2>
+                        <p class="parrafo">Los usuarios deben tener la posibilidad de deshacer acciones o salir de
+                            procesos
+                            sin complicaciones. Si cometen un error, deberían poder corregirlo fácilmente. Funciones
+                            como
+                            “Cancelar” o “Deshacer” son esenciales para que el usuario no se sienta atrapado en una
+                            acción
+                            irreversible.</p>
+                        <img src="../imagenes/princio3.png" alt="principio 3 Jackob">
+                    </div>
                 </li>
                 <li>
-                    <h2 class="titulo">Consistencia y estándares</h2>
-                    <p class="parrafo">Mantener coherencia en el diseño es clave. Los elementos deben funcionar de
-                        manera similar en toda la interfaz y seguir convenciones conocidas. Si un botón significa
-                        “Guardar” en una sección, no debería cambiar a “Aceptar” en otra. Esto reduce la curva de
-                        aprendizaje y evita errores.</p>
-
+                    <div class="caja-li">
+                        <h2 class="titulo">Consistencia y estándares</h2>
+                        <p class="parrafo">Mantener coherencia en el diseño es clave. Los elementos deben funcionar de
+                            manera similar en toda la interfaz y seguir convenciones conocidas. Si un botón significa
+                            “Guardar” en una sección, no debería cambiar a “Aceptar” en otra. Esto reduce la curva de
+                            aprendizaje y evita errores.</p>
+                        <img src="../imagenes/principio4.png" alt="principio 4 Jackob">
+                    </div>
                 </li>
                 <li>
-                    <h2 class="titulo">Prevención de errores</h2>
-                    <p class="parrafo">La interfaz debe mostrar opciones visibles para que el usuario no tenga que
-                        memorizar comandos o información. Menús claros, botones descriptivos y sugerencias ayudan a que
-                        la interacción sea más fluida y menos dependiente de la memoria del usuario.</p>
-
+                    <div class="caja-li">
+                        <h2 class="titulo">Prevención de errores</h2>
+                        <p class="parrafo">La interfaz debe mostrar opciones visibles para que el usuario no tenga que
+                            memorizar comandos o información. Menús claros, botones descriptivos y sugerencias ayudan a
+                            que
+                            la interacción sea más fluida y menos dependiente de la memoria del usuario.</p>
+                        <img src="../imagenes/principio5.png" alt="principio 5 Jackob">
+                    </div>
                 </li>
                 <li>
-                    <h2 class="titulo">Reconocimiento antes que recuerdo</h2>
-                    <p class="parrafo">Más que mostrar mensajes de error, lo ideal es diseñar la interfaz para que los
-                        errores no ocurran. Por ejemplo, validar datos antes de enviar un formulario o deshabilitar
-                        opciones que no son válidas. Esto mejora la experiencia y evita frustraciones.</p>
-
+                    <div class="caja-li">
+                        <h2 class="titulo">Reconocimiento antes que recuerdo</h2>
+                        <p class="parrafo">Más que mostrar mensajes de error, lo ideal es diseñar la interfaz para que
+                            los
+                            errores no ocurran. Por ejemplo, validar datos antes de enviar un formulario o deshabilitar
+                            opciones que no son válidas. Esto mejora la experiencia y evita frustraciones.</p>
+                        <img src="../imagenes/principios6.png" alt="principio 6 Jackob">
+                    </div>
                 </li>
                 <li>
-                    <h2 class="titulo">Flexibilidad y eficiencia de uso</h2>
-                    <p class="parrafo">El sistema debe adaptarse tanto a usuarios novatos como avanzados. Para los
-                        expertos, ofrecer atajos o comandos rápidos mejora la eficiencia. Para los principiantes,
-                        mantener opciones visibles y fáciles de entender garantiza una experiencia accesible.</p>
-
+                    <div class="caja-li">
+                        <h2 class="titulo">Flexibilidad y eficiencia de uso</h2>
+                        <p class="parrafo">El sistema debe adaptarse tanto a usuarios novatos como avanzados. Para los
+                            expertos, ofrecer atajos o comandos rápidos mejora la eficiencia. Para los principiantes,
+                            mantener opciones visibles y fáciles de entender garantiza una experiencia accesible.</p>
+                        <img src="../imagenes/principio7.png" alt="principio 7 Jackob">
+                    </div>
                 </li>
                 <li>
-                    <h2 class="titulo">Estética y diseño minimalista</h2>
-                    <p class="parrafo">Una interfaz limpia y ordenada mejora la experiencia del usuario. Evita saturar
-                        la pantalla con información innecesaria, imágenes excesivas o texto redundante. El diseño debe
-                        enfocarse en lo esencial para que el usuario encuentre lo que busca sin distracciones.</p>
-
+                    <div class="caja-li">
+                        <h2 class="titulo">Estética y diseño minimalista</h2>
+                        <p class="parrafo">Una interfaz limpia y ordenada mejora la experiencia del usuario. Evita
+                            saturar
+                            la pantalla con información innecesaria, imágenes excesivas o texto redundante. El diseño
+                            debe
+                            enfocarse en lo esencial para que el usuario encuentre lo que busca sin distracciones.</p>
+                        <img src="../imagenes/principio8.png" alt="principio 8 Jackob">
+                    </div>
                 </li>
                 <li>
-                    <h2 class="titulo">Ayudar a reconocer, diagnosticar y recuperarse de errores</h2>
-                    <p class="parrafo">Cuando ocurre un error, el mensaje debe ser claro y explicar qué pasó y cómo
-                        solucionarlo. Evita códigos técnicos como “Error 404” sin contexto. En su lugar, usa mensajes
-                        como “Página no encontrada. Verifica la URL o regresa al inicio”.</p>
-
+                    <div class="caja-li">
+                        <h2 class="titulo">Ayudar a reconocer, diagnosticar y recuperarse de errores</h2>
+                        <p class="parrafo">Cuando ocurre un error, el mensaje debe ser claro y explicar qué pasó y cómo
+                            solucionarlo. Evita códigos técnicos como “Error 404” sin contexto. En su lugar, usa
+                            mensajes
+                            como “Página no encontrada. Verifica la URL o regresa al inicio”.</p>
+                        <img src="../imagenes/principio9.png" alt="principio 9 Jackob">
+                    </div>
                 </li>
                 <li>
-                    <h2 class="titulo">Ayuda y documentación</h2>
-                    <p class="parrafo">Aunque lo ideal es que el sistema sea intuitivo, siempre debe existir una sección
-                        de ayuda accesible. Esta documentación debe ser fácil de encontrar y explicar los pasos para
-                        resolver problemas comunes, sin lenguaje técnico complicado.</p>
-
+                    <div class="caja-li">
+                        <h2 class="titulo">Ayuda y documentación</h2>
+                        <p class="parrafo">Aunque lo ideal es que el sistema sea intuitivo, siempre debe existir una
+                            sección
+                            de ayuda accesible. Esta documentación debe ser fácil de encontrar y explicar los pasos para
+                            resolver problemas comunes, sin lenguaje técnico complicado.</p>
+                        <img src="../imagenes/principio10.png" alt="principio 10 Jackob">
+                    </div>
                 </li>
             </ol>
-            <!-- Espacios para imágenes -->
-            <div class="caja">
-                <div>
-                    <h3>Buena práctica</h3>
-                    img/usabilidad-buena.jpg
-                </div>
-                <div>
-                    <h3>Mala práctica</h3>
-                    img/usabilidad-mala.jpg
-                </div>
+
+            <div class="caja-practica">
+                <section>
+
+                    <h2 class="parrafo">Aplicación práctica de principios de usabilidad</h2>
+                    <article>
+                        <h3 class="titulo">Consistencia y Estándares</h3>
+                        <p class="parrafo">Se ha mantenido un diseño coherente en toda la página, utilizando los mismos
+                            estilos para
+                            títulos, párrafos y botones. Los íconos y colores siguen convenciones conocidas para
+                            facilitar
+                            el reconocimiento por parte del usuario.</p>
+
+                    </article>
+
+                    <article>
+                        <h3 class="titulo">Flexibilidad y Eficiencia de Uso</h3>
+                        <p class="parrafo">Se ha implementado un atajo de teclado (<kbd>Ctrl</kbd> + <kbd>I</kbd>) que
+                            permite a los
+                            usuarios avanzados acceder rápidamente a información clave sobre DCU, mejorando la
+                            eficiencia de
+                            navegación.</p>
+                    </article>
+
+                    <article>
+                        <h3 class="titulo">Estética y Diseño Minimalista</h3>
+                        <p class="parrafo">La interfaz utiliza un diseño limpio, con suficiente espacio entre elementos,
+                            colores suaves y
+                            sin saturación de contenido. Esto permite al usuario enfocarse en la información esencial
+                            sin
+                            distracciones.</p>
+                    </article>
+                </section>
             </div>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/TU_ID_DE_VIDEO" frameborder="0"
-                allowfullscreen; 2025 Franklin Abraham Montoya Matus</p>
-                </footer>
+
+            <script>
+                document.addEventListener('keydown', function (e) {
+                    if (e.ctrlKey && e.key.toLowerCase() === 'i') {
+                        e.preventDefault();
+                        alert("DCU mejora la eficiencia, accesibilidad y satisfacción del usuario. ¡Principio aplicado: Flexibilidad y eficiencia de uso!");
+                    }
+                });
+            </script>
+
+
+<section class="referencias">
+    <div id="referenciadiv">
+    <nav>
+        <h2 class="titulo"><strong>Referencias</strong></h2>
+        
+        <ul class="referencias">
+            <br>
+            <br>
+            <br>
+            <li> <a href="https://www.interaction-design.org/literature/topics/usability?srsltid=AfmBOop5pUBted33lFi4St9oN4GCqp4SvegKCeIcOo08UMWEoUJQIP7g">Usabilidad</a></li>
+            <li><a href="https://www-crexendo-com.translate.goog/blog/5-reasons-why-focusing-on-usability-is-critical-for-your-business/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc">Razones por la que la usabilidad es crucial</a></li>
+            <li><a href="es.semrush.com/blog/usabilidad-web-principios-jakob-nielsen/">Principios Jackob Nielsen</a></li>
+            
+        </ul>
+    </nav>
+</div>
+</section>
+            <footer>
+
+                <p class="hechopor">By Abraham Matus
+                    <br>
+                    Todos los derechos reservados
+                </p>
+
+            </footer>
+            
 </body>
 
 </html>
